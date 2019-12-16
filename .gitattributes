@@ -1,0 +1,4 @@
+*.swift linguist-language=Swift
+*.java linguist-language=Java
+*.xaml linguist-language=C#
+*.cs linguist-language=C#
