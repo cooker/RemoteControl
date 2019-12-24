@@ -1,0 +1,6 @@
+framework module Pods_movie_remote_control_movie_remote_controlUITests {
+  umbrella header "Pods-movie-remote-control-movie-remote-controlUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'movie-remote-control' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'SwiftHTTP', '~> 3.0.1'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'swiftScan', :git => 'https://github.com/MxABC/swiftScan.git'
+  # Pods for movie-remote-control
+
+  target 'movie-remote-controlTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'movie-remote-controlUITests' do
+    # Pods for testing
+  end
+
+end

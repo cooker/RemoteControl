@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_movie_remote_control_movie_remote_controlUITests : NSObject
+@end
+@implementation PodsDummy_Pods_movie_remote_control_movie_remote_controlUITests
+@end

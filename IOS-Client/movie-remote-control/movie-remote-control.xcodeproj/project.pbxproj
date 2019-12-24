@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5115B0B241306C9E473F0C60 /* Pods_movie_remote_control_movie_remote_controlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B9E0A2704086713FA261D8 /* Pods_movie_remote_control_movie_remote_controlUITests.framework */; };
+		9371C57723B0BE3C0088906D /* CamHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371C57623B0BE3C0088906D /* CamHelper.swift */; };
+		93B039EC23A0EDC9004B62BC /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B039EB23A0EDC9004B62BC /* HttpHelper.swift */; };
+		93CEBD5F239BCB89006F62F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD5E239BCB89006F62F5 /* AppDelegate.swift */; };
+		93CEBD61239BCB89006F62F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD60239BCB89006F62F5 /* SceneDelegate.swift */; };
+		93CEBD63239BCB89006F62F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD62239BCB89006F62F5 /* ContentView.swift */; };
+		93CEBD65239BCB8A006F62F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CEBD64239BCB8A006F62F5 /* Assets.xcassets */; };
+		93CEBD68239BCB8A006F62F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CEBD67239BCB8A006F62F5 /* Preview Assets.xcassets */; };
+		93CEBD6B239BCB8A006F62F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CEBD69239BCB8A006F62F5 /* LaunchScreen.storyboard */; };
+		93CEBD76239BCB8A006F62F5 /* movie_remote_controlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD75239BCB8A006F62F5 /* movie_remote_controlTests.swift */; };
+		93CEBD81239BCB8A006F62F5 /* movie_remote_controlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD80239BCB8A006F62F5 /* movie_remote_controlUITests.swift */; };
+		93CEBD90239BCBEF006F62F5 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD8F239BCBEF006F62F5 /* Light.swift */; };
+		93CEBD93239BCC45006F62F5 /* LightEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD92239BCC45006F62F5 /* LightEnum.swift */; };
+		93CEBD95239BD079006F62F5 /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD94239BD079006F62F5 /* MButton.swift */; };
+		93CEBD97239BD08B006F62F5 /* MButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD96239BD08B006F62F5 /* MButtonEnum.swift */; };
+		93CEBD99239CBCED006F62F5 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD98239CBCED006F62F5 /* Env.swift */; };
+		EB9C17A0D3632B6BEF7A3ACC /* Pods_movie_remote_control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC61DE2D5DCCCC08B3E24233 /* Pods_movie_remote_control.framework */; };
+		F1FAC8809043836074432D70 /* Pods_movie_remote_controlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F56C0B8B94FCF56085C6A1 /* Pods_movie_remote_controlTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93CEBD72239BCB8A006F62F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93CEBD53239BCB89006F62F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93CEBD5A239BCB89006F62F5;
+			remoteInfo = "movie-remote-control";
+		};
+		93CEBD7D239BCB8A006F62F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93CEBD53239BCB89006F62F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93CEBD5A239BCB89006F62F5;
+			remoteInfo = "movie-remote-control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07427DC7810C7B89B7E3F1C3 /* Pods-movie-remote-control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-control.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-control/Pods-movie-remote-control.release.xcconfig"; sourceTree = "<group>"; };
+		35CC60EE33E46EF53276AFB6 /* Pods-movie-remote-control-movie-remote-controlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-control-movie-remote-controlUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-control-movie-remote-controlUITests/Pods-movie-remote-control-movie-remote-controlUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F9D4F2AF4364EBB89A63F69 /* Pods-movie-remote-controlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-controlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-controlTests/Pods-movie-remote-controlTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C4A502BA63DDE83ADE4C311 /* Pods-movie-remote-controlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-controlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-controlTests/Pods-movie-remote-controlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AABA8C04F076AA5E51A60EC /* Pods-movie-remote-control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-control/Pods-movie-remote-control.debug.xcconfig"; sourceTree = "<group>"; };
+		9371C57623B0BE3C0088906D /* CamHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamHelper.swift; sourceTree = "<group>"; };
+		93B039EB23A0EDC9004B62BC /* HttpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
+		93CEBD5B239BCB89006F62F5 /* movie-remote-control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movie-remote-control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CEBD5E239BCB89006F62F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93CEBD60239BCB89006F62F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93CEBD62239BCB89006F62F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93CEBD64239BCB8A006F62F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93CEBD67239BCB8A006F62F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93CEBD6A239BCB8A006F62F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93CEBD6C239BCB8A006F62F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93CEBD71239BCB8A006F62F5 /* movie-remote-controlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "movie-remote-controlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CEBD75239BCB8A006F62F5 /* movie_remote_controlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie_remote_controlTests.swift; sourceTree = "<group>"; };
+		93CEBD77239BCB8A006F62F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93CEBD7C239BCB8A006F62F5 /* movie-remote-controlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "movie-remote-controlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CEBD80239BCB8A006F62F5 /* movie_remote_controlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie_remote_controlUITests.swift; sourceTree = "<group>"; };
+		93CEBD82239BCB8A006F62F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93CEBD8F239BCBEF006F62F5 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		93CEBD92239BCC45006F62F5 /* LightEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightEnum.swift; sourceTree = "<group>"; };
+		93CEBD94239BD079006F62F5 /* MButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MButton.swift; sourceTree = "<group>"; };
+		93CEBD96239BD08B006F62F5 /* MButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MButtonEnum.swift; sourceTree = "<group>"; };
+		93CEBD98239CBCED006F62F5 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		C3F56C0B8B94FCF56085C6A1 /* Pods_movie_remote_controlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_remote_controlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54679B3951F70E01258C3E0 /* Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-control-movie-remote-controlUITests/Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E0B9E0A2704086713FA261D8 /* Pods_movie_remote_control_movie_remote_controlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_remote_control_movie_remote_controlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC61DE2D5DCCCC08B3E24233 /* Pods_movie_remote_control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_remote_control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93CEBD58239BCB89006F62F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9C17A0D3632B6BEF7A3ACC /* Pods_movie_remote_control.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEBD6E239BCB8A006F62F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FAC8809043836074432D70 /* Pods_movie_remote_controlTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEBD79239BCB8A006F62F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5115B0B241306C9E473F0C60 /* Pods_movie_remote_control_movie_remote_controlUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E75FE608A1E378AB35D5EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DE2D5DCCCC08B3E24233 /* Pods_movie_remote_control.framework */,
+				E0B9E0A2704086713FA261D8 /* Pods_movie_remote_control_movie_remote_controlUITests.framework */,
+				C3F56C0B8B94FCF56085C6A1 /* Pods_movie_remote_controlTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DE1B7BF7D7EEB5A58611DAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AABA8C04F076AA5E51A60EC /* Pods-movie-remote-control.debug.xcconfig */,
+				07427DC7810C7B89B7E3F1C3 /* Pods-movie-remote-control.release.xcconfig */,
+				35CC60EE33E46EF53276AFB6 /* Pods-movie-remote-control-movie-remote-controlUITests.debug.xcconfig */,
+				D54679B3951F70E01258C3E0 /* Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig */,
+				5C4A502BA63DDE83ADE4C311 /* Pods-movie-remote-controlTests.debug.xcconfig */,
+				4F9D4F2AF4364EBB89A63F69 /* Pods-movie-remote-controlTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93B039EA23A0EDA6004B62BC /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				93B039EB23A0EDC9004B62BC /* HttpHelper.swift */,
+				9371C57623B0BE3C0088906D /* CamHelper.swift */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		93CEBD52239BCB89006F62F5 = {
+			isa = PBXGroup;
+			children = (
+				93CEBD5D239BCB89006F62F5 /* movie-remote-control */,
+				93CEBD74239BCB8A006F62F5 /* movie-remote-controlTests */,
+				93CEBD7F239BCB8A006F62F5 /* movie-remote-controlUITests */,
+				93CEBD5C239BCB89006F62F5 /* Products */,
+				6DE1B7BF7D7EEB5A58611DAB /* Pods */,
+				3E75FE608A1E378AB35D5EB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93CEBD5C239BCB89006F62F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93CEBD5B239BCB89006F62F5 /* movie-remote-control.app */,
+				93CEBD71239BCB8A006F62F5 /* movie-remote-controlTests.xctest */,
+				93CEBD7C239BCB8A006F62F5 /* movie-remote-controlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93CEBD5D239BCB89006F62F5 /* movie-remote-control */ = {
+			isa = PBXGroup;
+			children = (
+				93B039EA23A0EDA6004B62BC /* tool */,
+				93CEBD91239BCC08006F62F5 /* contants */,
+				93CEBD8E239BCB9F006F62F5 /* views */,
+				93CEBD5E239BCB89006F62F5 /* AppDelegate.swift */,
+				93CEBD60239BCB89006F62F5 /* SceneDelegate.swift */,
+				93CEBD62239BCB89006F62F5 /* ContentView.swift */,
+				93CEBD64239BCB8A006F62F5 /* Assets.xcassets */,
+				93CEBD69239BCB8A006F62F5 /* LaunchScreen.storyboard */,
+				93CEBD6C239BCB8A006F62F5 /* Info.plist */,
+				93CEBD66239BCB8A006F62F5 /* Preview Content */,
+			);
+			path = "movie-remote-control";
+			sourceTree = "<group>";
+		};
+		93CEBD66239BCB8A006F62F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				93CEBD67239BCB8A006F62F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93CEBD74239BCB8A006F62F5 /* movie-remote-controlTests */ = {
+			isa = PBXGroup;
+			children = (
+				93CEBD75239BCB8A006F62F5 /* movie_remote_controlTests.swift */,
+				93CEBD77239BCB8A006F62F5 /* Info.plist */,
+			);
+			path = "movie-remote-controlTests";
+			sourceTree = "<group>";
+		};
+		93CEBD7F239BCB8A006F62F5 /* movie-remote-controlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93CEBD80239BCB8A006F62F5 /* movie_remote_controlUITests.swift */,
+				93CEBD82239BCB8A006F62F5 /* Info.plist */,
+			);
+			path = "movie-remote-controlUITests";
+			sourceTree = "<group>";
+		};
+		93CEBD8E239BCB9F006F62F5 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				93CEBD8F239BCBEF006F62F5 /* Light.swift */,
+				93CEBD94239BD079006F62F5 /* MButton.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		93CEBD91239BCC08006F62F5 /* contants */ = {
+			isa = PBXGroup;
+			children = (
+				93CEBD92239BCC45006F62F5 /* LightEnum.swift */,
+				93CEBD96239BD08B006F62F5 /* MButtonEnum.swift */,
+				93CEBD98239CBCED006F62F5 /* Env.swift */,
+			);
+			path = contants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93CEBD5A239BCB89006F62F5 /* movie-remote-control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93CEBD85239BCB8A006F62F5 /* Build configuration list for PBXNativeTarget "movie-remote-control" */;
+			buildPhases = (
+				1CBEA9332BB75E9551D5703E /* [CP] Check Pods Manifest.lock */,
+				93CEBD57239BCB89006F62F5 /* Sources */,
+				93CEBD58239BCB89006F62F5 /* Frameworks */,
+				93CEBD59239BCB89006F62F5 /* Resources */,
+				1417906A5C7DD5745B5071E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "movie-remote-control";
+			productName = "movie-remote-control";
+			productReference = 93CEBD5B239BCB89006F62F5 /* movie-remote-control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93CEBD70239BCB8A006F62F5 /* movie-remote-controlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93CEBD88239BCB8A006F62F5 /* Build configuration list for PBXNativeTarget "movie-remote-controlTests" */;
+			buildPhases = (
+				8456C9E388B36BABF695F6E5 /* [CP] Check Pods Manifest.lock */,
+				93CEBD6D239BCB8A006F62F5 /* Sources */,
+				93CEBD6E239BCB8A006F62F5 /* Frameworks */,
+				93CEBD6F239BCB8A006F62F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93CEBD73239BCB8A006F62F5 /* PBXTargetDependency */,
+			);
+			name = "movie-remote-controlTests";
+			productName = "movie-remote-controlTests";
+			productReference = 93CEBD71239BCB8A006F62F5 /* movie-remote-controlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93CEBD7B239BCB8A006F62F5 /* movie-remote-controlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93CEBD8B239BCB8A006F62F5 /* Build configuration list for PBXNativeTarget "movie-remote-controlUITests" */;
+			buildPhases = (
+				A52B10A3356E146193A33BA5 /* [CP] Check Pods Manifest.lock */,
+				93CEBD78239BCB8A006F62F5 /* Sources */,
+				93CEBD79239BCB8A006F62F5 /* Frameworks */,
+				93CEBD7A239BCB8A006F62F5 /* Resources */,
+				8D7D15C6BC0F78342C1C9943 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93CEBD7E239BCB8A006F62F5 /* PBXTargetDependency */,
+			);
+			name = "movie-remote-controlUITests";
+			productName = "movie-remote-controlUITests";
+			productReference = 93CEBD7C239BCB8A006F62F5 /* movie-remote-controlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93CEBD53239BCB89006F62F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = grant;
+				TargetAttributes = {
+					93CEBD5A239BCB89006F62F5 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					93CEBD70239BCB8A006F62F5 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 93CEBD5A239BCB89006F62F5;
+					};
+					93CEBD7B239BCB8A006F62F5 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 93CEBD5A239BCB89006F62F5;
+					};
+				};
+			};
+			buildConfigurationList = 93CEBD56239BCB89006F62F5 /* Build configuration list for PBXProject "movie-remote-control" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93CEBD52239BCB89006F62F5;
+			productRefGroup = 93CEBD5C239BCB89006F62F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93CEBD5A239BCB89006F62F5 /* movie-remote-control */,
+				93CEBD70239BCB8A006F62F5 /* movie-remote-controlTests */,
+				93CEBD7B239BCB8A006F62F5 /* movie-remote-controlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93CEBD59239BCB89006F62F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CEBD6B239BCB8A006F62F5 /* LaunchScreen.storyboard in Resources */,
+				93CEBD68239BCB8A006F62F5 /* Preview Assets.xcassets in Resources */,
+				93CEBD65239BCB8A006F62F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEBD6F239BCB8A006F62F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEBD7A239BCB8A006F62F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1417906A5C7DD5745B5071E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-movie-remote-control/Pods-movie-remote-control-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHTTP/SwiftHTTP.framework",
+				"${BUILT_PRODUCTS_DIR}/swiftScan/swiftScan.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHTTP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/swiftScan.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movie-remote-control/Pods-movie-remote-control-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CBEA9332BB75E9551D5703E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-movie-remote-control-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8456C9E388B36BABF695F6E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-movie-remote-controlTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D7D15C6BC0F78342C1C9943 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-movie-remote-control-movie-remote-controlUITests/Pods-movie-remote-control-movie-remote-controlUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHTTP/SwiftHTTP.framework",
+				"${BUILT_PRODUCTS_DIR}/swiftScan/swiftScan.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHTTP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/swiftScan.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movie-remote-control-movie-remote-controlUITests/Pods-movie-remote-control-movie-remote-controlUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A52B10A3356E146193A33BA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-movie-remote-control-movie-remote-controlUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93CEBD57239BCB89006F62F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CEBD5F239BCB89006F62F5 /* AppDelegate.swift in Sources */,
+				9371C57723B0BE3C0088906D /* CamHelper.swift in Sources */,
+				93CEBD93239BCC45006F62F5 /* LightEnum.swift in Sources */,
+				93B039EC23A0EDC9004B62BC /* HttpHelper.swift in Sources */,
+				93CEBD61239BCB89006F62F5 /* SceneDelegate.swift in Sources */,
+				93CEBD90239BCBEF006F62F5 /* Light.swift in Sources */,
+				93CEBD63239BCB89006F62F5 /* ContentView.swift in Sources */,
+				93CEBD99239CBCED006F62F5 /* Env.swift in Sources */,
+				93CEBD97239BD08B006F62F5 /* MButtonEnum.swift in Sources */,
+				93CEBD95239BD079006F62F5 /* MButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEBD6D239BCB8A006F62F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CEBD76239BCB8A006F62F5 /* movie_remote_controlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEBD78239BCB8A006F62F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CEBD81239BCB8A006F62F5 /* movie_remote_controlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93CEBD73239BCB8A006F62F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93CEBD5A239BCB89006F62F5 /* movie-remote-control */;
+			targetProxy = 93CEBD72239BCB8A006F62F5 /* PBXContainerItemProxy */;
+		};
+		93CEBD7E239BCB8A006F62F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93CEBD5A239BCB89006F62F5 /* movie-remote-control */;
+			targetProxy = 93CEBD7D239BCB8A006F62F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93CEBD69239BCB8A006F62F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93CEBD6A239BCB8A006F62F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93CEBD83239BCB8A006F62F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "PC 遥控器";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93CEBD84239BCB8A006F62F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "PC 遥控器";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93CEBD86239BCB8A006F62F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AABA8C04F076AA5E51A60EC /* Pods-movie-remote-control.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"movie-remote-control/Preview Content\"";
+				DEVELOPMENT_TEAM = 9425W39CRV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "movie-remote-control/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "grant.movie-remote-control";
+				PRODUCT_NAME = "movie-remote-control";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		93CEBD87239BCB8A006F62F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07427DC7810C7B89B7E3F1C3 /* Pods-movie-remote-control.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"movie-remote-control/Preview Content\"";
+				DEVELOPMENT_TEAM = 9425W39CRV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "movie-remote-control/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "grant.movie-remote-control";
+				PRODUCT_NAME = "movie-remote-control";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		93CEBD89239BCB8A006F62F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4A502BA63DDE83ADE4C311 /* Pods-movie-remote-controlTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9425W39CRV;
+				INFOPLIST_FILE = "movie-remote-controlTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "grant.movie-remote-controlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/movie-remote-control.app/movie-remote-control";
+			};
+			name = Debug;
+		};
+		93CEBD8A239BCB8A006F62F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F9D4F2AF4364EBB89A63F69 /* Pods-movie-remote-controlTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9425W39CRV;
+				INFOPLIST_FILE = "movie-remote-controlTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "grant.movie-remote-controlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/movie-remote-control.app/movie-remote-control";
+			};
+			name = Release;
+		};
+		93CEBD8C239BCB8A006F62F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35CC60EE33E46EF53276AFB6 /* Pods-movie-remote-control-movie-remote-controlUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9425W39CRV;
+				INFOPLIST_FILE = "movie-remote-controlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "grant.movie-remote-controlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "movie-remote-control";
+			};
+			name = Debug;
+		};
+		93CEBD8D239BCB8A006F62F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D54679B3951F70E01258C3E0 /* Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9425W39CRV;
+				INFOPLIST_FILE = "movie-remote-controlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "grant.movie-remote-controlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "movie-remote-control";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93CEBD56239BCB89006F62F5 /* Build configuration list for PBXProject "movie-remote-control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CEBD83239BCB8A006F62F5 /* Debug */,
+				93CEBD84239BCB8A006F62F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93CEBD85239BCB8A006F62F5 /* Build configuration list for PBXNativeTarget "movie-remote-control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CEBD86239BCB8A006F62F5 /* Debug */,
+				93CEBD87239BCB8A006F62F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93CEBD88239BCB8A006F62F5 /* Build configuration list for PBXNativeTarget "movie-remote-controlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CEBD89239BCB8A006F62F5 /* Debug */,
+				93CEBD8A239BCB8A006F62F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93CEBD8B239BCB8A006F62F5 /* Build configuration list for PBXNativeTarget "movie-remote-controlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CEBD8C239BCB8A006F62F5 /* Debug */,
+				93CEBD8D239BCB8A006F62F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93CEBD53239BCB89006F62F5 /* Project object */;
+}
