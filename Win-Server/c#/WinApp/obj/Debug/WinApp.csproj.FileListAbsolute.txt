@@ -1,0 +1,17 @@
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\bin\Debug\WinApp.exe.config
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\bin\Debug\WinApp.exe
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\bin\Debug\WinApp.pdb
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp.csprojAssemblyReference.cache
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\MainWindow.g.cs
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\App.g.cs
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp_MarkupCompile.cache
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp_MarkupCompile.lref
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\MainWindow.baml
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp.g.resources
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp.exe
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp.pdb
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\Simple Styles.baml
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\App.baml
+F:\个人开发\远程PC遥控器\WinApp\WinApp\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
