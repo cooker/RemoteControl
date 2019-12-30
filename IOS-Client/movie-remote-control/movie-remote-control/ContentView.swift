@@ -13,65 +13,67 @@ struct ContentView: View {
     
     @State var ip:String = ""
     @State var state: LightEnum = LightEnum.OFF
+    @State var isScan:Bool = false
     
     var body: some View {
-        VStack() {
-            Spacer()
-                .frame(height: 42.0)
-            HStack{
-                Spacer()
-                TextField("255.255.255.255", text: $ip)
-                    .frame(width: 200.0, height: 42.0)
-                    .shadow(radius: 1.0)
-                    .cornerRadius(5.0)
-                    .background(Color.white)
-                    .border(Color.black, width: 1)
-                Spacer()
-                Light(state: $state).offset().padding(.all, 20.0)
-            }
-            
-            Spacer()
-            
-            VStack {
-                MButton(state: .UP) {
-                    self.callPc(.UP)
-                }
+        NavigationView() {
+            VStack() {
                 HStack{
-                    MButton(state: .LEFT){
-                        self.callPc(.LEFT)
+                    Spacer()
+                    NavigationLink(destination: OcrScanView(ip: $ip, isScan: $isScan), isActive: self.$isScan) {
+                        Text("扫码")
+                    }.navigationBarBackButtonHidden(false)
+                    Spacer()
+                    TextField("255.255.255.255", text: $ip)
+                        .frame(width: 200.0, height: 42.0)
+                        .shadow(radius: 1.0)
+                        .cornerRadius(5.0)
+                        .background(Color.white)
+                        .border(Color.black, width: 1)
+                    Spacer()
+                    Light(state: $state).offset().padding(.all, 20.0)
+                }
+                
+                Spacer()
+                
+                VStack {
+                    MButton(state: .UP) {
+                        self.callPc(.UP)
                     }
-                    MButton(state: .PLAY){
-                       self.callPc(.PLAY)
-                        
-                    }.padding([.top, .bottom], 5.0)
-                    MButton(state: .RIGHT){
-                       self.callPc(.RIGHT)
+                    HStack{
+                        MButton(state: .LEFT){
+                            self.callPc(.LEFT)
+                        }
+                        MButton(state: .PLAY){
+                           self.callPc(.PLAY)
+                            
+                        }.padding([.top, .bottom], 5.0)
+                        MButton(state: .RIGHT){
+                           self.callPc(.RIGHT)
+                        }
+                    }
+                    MButton(state: .DOWN){
+                        self.callPc(.DOWN)
                     }
                 }
-                MButton(state: .DOWN){
-                    self.callPc(.DOWN)
+                Spacer()
+                HStack {
+                    MButton(state: .CLOSE){
+                        self.callPc(.CLOSE)
+                    }
+                    MButton(state: .FULL_SCREEN){
+                        self.callPc(.FULL_SCREEN)
+                    }
+                    MButton(state: .PGUP){
+                        self.callPc(.PGUP)
+                    }
+                    MButton(state: .PGDN){
+                        self.callPc(.PGDN)
+                    }
                 }
+                Spacer()
             }
-            Spacer()
-            HStack {
-                MButton(state: .CLOSE){
-                    self.callPc(.CLOSE)
-                }
-                MButton(state: .FULL_SCREEN){
-                    self.callPc(.FULL_SCREEN)
-                }
-                MButton(state: .PGUP){
-                    self.callPc(.PGUP)
-                }
-                MButton(state: .PGDN){
-                    self.callPc(.PGDN)
-                }
-            }
-
-            Spacer()
-        }
-        .background(Color(red: 119, green: 237, blue: 204))
-        .edgesIgnoringSafeArea([.top, .bottom])
+        }.background(Color(red: 119, green: 237, blue: 204))
         
     }
     

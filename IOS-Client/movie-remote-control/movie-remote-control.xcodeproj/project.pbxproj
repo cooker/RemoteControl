@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5115B0B241306C9E473F0C60 /* Pods_movie_remote_control_movie_remote_controlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B9E0A2704086713FA261D8 /* Pods_movie_remote_control_movie_remote_controlUITests.framework */; };
+		935A99CC23B70694006D0F27 /* OcrScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A99CB23B70694006D0F27 /* OcrScanView.swift */; };
 		9371C57723B0BE3C0088906D /* CamHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371C57623B0BE3C0088906D /* CamHelper.swift */; };
 		93B039EC23A0EDC9004B62BC /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B039EB23A0EDC9004B62BC /* HttpHelper.swift */; };
 		93CEBD5F239BCB89006F62F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD5E239BCB89006F62F5 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		4F9D4F2AF4364EBB89A63F69 /* Pods-movie-remote-controlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-controlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-controlTests/Pods-movie-remote-controlTests.release.xcconfig"; sourceTree = "<group>"; };
 		5C4A502BA63DDE83ADE4C311 /* Pods-movie-remote-controlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-controlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-controlTests/Pods-movie-remote-controlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AABA8C04F076AA5E51A60EC /* Pods-movie-remote-control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-control/Pods-movie-remote-control.debug.xcconfig"; sourceTree = "<group>"; };
+		935A99CB23B70694006D0F27 /* OcrScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrScanView.swift; sourceTree = "<group>"; };
 		9371C57623B0BE3C0088906D /* CamHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamHelper.swift; sourceTree = "<group>"; };
 		93B039EB23A0EDC9004B62BC /* HttpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
 		93CEBD5B239BCB89006F62F5 /* movie-remote-control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movie-remote-control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 			children = (
 				93CEBD8F239BCBEF006F62F5 /* Light.swift */,
 				93CEBD94239BD079006F62F5 /* MButton.swift */,
+				935A99CB23B70694006D0F27 /* OcrScanView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				93CEBD5F239BCB89006F62F5 /* AppDelegate.swift in Sources */,
 				9371C57723B0BE3C0088906D /* CamHelper.swift in Sources */,
 				93CEBD93239BCC45006F62F5 /* LightEnum.swift in Sources */,
+				935A99CC23B70694006D0F27 /* OcrScanView.swift in Sources */,
 				93B039EC23A0EDC9004B62BC /* HttpHelper.swift in Sources */,
 				93CEBD61239BCB89006F62F5 /* SceneDelegate.swift in Sources */,
 				93CEBD90239BCBEF006F62F5 /* Light.swift in Sources */,
