@@ -6,13 +6,11 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
   - SwiftHTTP (3.0.1)
-  - swiftScan (1.2.0)
 
 DEPENDENCIES:
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - SwiftHTTP (~> 3.0.1)
-  - swiftScan (from `https://github.com/MxABC/swiftScan.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -21,22 +19,12 @@ SPEC REPOS:
     - RxSwift
     - SwiftHTTP
 
-EXTERNAL SOURCES:
-  swiftScan:
-    :git: https://github.com/MxABC/swiftScan.git
-
-CHECKOUT OPTIONS:
-  swiftScan:
-    :commit: fd652ea645b29841f5990ed1583ce6038f190e56
-    :git: https://github.com/MxABC/swiftScan.git
-
 SPEC CHECKSUMS:
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftHTTP: e94f1aa8cde58637dcc0100f6349de31a3337fde
-  swiftScan: d7f91607b1a47cc04e6eb654c2c01e2e940e337d
 
-PODFILE CHECKSUM: 1e41520d0214e5b955f2e406bd4fe0b71423cc84
+PODFILE CHECKSUM: 21f88ad3bd552f750a834f7ffa89b1490a03fcff
 
 COCOAPODS: 1.5.2

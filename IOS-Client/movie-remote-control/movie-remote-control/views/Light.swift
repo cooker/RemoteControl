@@ -9,29 +9,35 @@
 import SwiftUI
 
 struct Light: View {
-    var state:Binding<LightEnum>;
+    var state:Binding<ANEnum>;
     
     var body: some View {
-        HStack{
-            Image(self.state.wrappedValue == LightEnum.ON ? "lightOn" : "lightOff")
-                .shadow(radius: 15)
-                .shadow(color: .yellow, radius: .pi, x: .pi, y: .pi)
-                
-                
+        let img = buildImage()
+        if self.state.wrappedValue == .ON {
+            return img.foregroundColor(.yellow)
+                .shadow(color: .yellow, radius: 3, x: 0, y: 5)
+        }else {
+            return img.foregroundColor(.black)
+                .shadow(color: .black, radius: 0, x: 0, y: 0)
         }
+    }
     
+    func buildImage() -> some View {
+        let img = Image(systemName: "sun.min")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 36, height: 48, alignment: .center)
+        return img
     }
 }
 
+#if DEBUG
 struct Light_Previews: PreviewProvider {
-    @State static var sk = LightEnum.ON
-    @State static var sk1 = LightEnum.OFF
+    @State static var sk = ANEnum.ON
     
     static var previews: some View {
     
-        VStack{
-            Light(state: $sk)
-            Light(state: $sk1)
-        }.background(Color.black)
+        Light(state: $sk)
     }
 }
+#endif

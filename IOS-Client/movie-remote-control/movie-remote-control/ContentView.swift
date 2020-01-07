@@ -12,7 +12,7 @@ import RxSwift
 struct ContentView: View {
     
     @State var ip:String = ""
-    @State var state: LightEnum = LightEnum.OFF
+    @State var state: ANEnum = ANEnum.OFF
     @State var isScan:Bool = false
     
     var body: some View {
@@ -21,15 +21,15 @@ struct ContentView: View {
                 HStack{
                     Spacer()
                     NavigationLink(destination: OcrScanView(ip: $ip, isScan: $isScan), isActive: self.$isScan) {
-                        Text("扫码")
-                    }.navigationBarBackButtonHidden(false)
+                        
+                        Image(systemName: "qrcode.viewfinder")
+                            .resizable()
+                            .frame(width: 36, height: 36, alignment: .center)
+                    }
                     Spacer()
                     TextField("255.255.255.255", text: $ip)
-                        .frame(width: 200.0, height: 42.0)
-                        .shadow(radius: 1.0)
-                        .cornerRadius(5.0)
-                        .background(Color.white)
-                        .border(Color.black, width: 1)
+                        .frame(width: 200.0, height: 52.0)
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                     Spacer()
                     Light(state: $state).offset().padding(.all, 20.0)
                 }
@@ -43,6 +43,7 @@ struct ContentView: View {
                     HStack{
                         MButton(state: .LEFT){
                             self.callPc(.LEFT)
+                            
                         }
                         MButton(state: .PLAY){
                            self.callPc(.PLAY)
@@ -73,11 +74,11 @@ struct ContentView: View {
                 }
                 Spacer()
             }
-        }.background(Color(red: 119, green: 237, blue: 204))
+        }.background(Color.clear)
         
     }
     
-    public func callPc(_ m:MButtonEnum) {
+    public func callPc(_ m:ANEnum) {
         self.state = .ON
         callHttp(m, self.ip)
         //延迟1秒执行
@@ -87,9 +88,11 @@ struct ContentView: View {
     }
 }
 
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     
     static var previews: some View {
         ContentView()
     }
 }
+#endif

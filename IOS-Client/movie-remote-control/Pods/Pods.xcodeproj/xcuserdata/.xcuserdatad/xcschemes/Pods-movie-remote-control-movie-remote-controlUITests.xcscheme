@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6BCE5E18399F73117E274D7311FF305A"
+               BlueprintIdentifier = "CE9167A93F2F012DFF01E0419DEF1B98"
                BlueprintName = "Pods-movie-remote-control-movie-remote-controlUITests"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-movie-remote-control-movie-remote-controlUITests.framework">

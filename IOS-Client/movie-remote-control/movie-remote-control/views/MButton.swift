@@ -10,10 +10,10 @@ import Foundation
 import SwiftUI
 
 struct MButton: View {
-    let state:MButtonEnum;
+    let state:ANEnum;
     let action: ()->Void
     
-    init(state:MButtonEnum, _ action:@escaping ()->Void = {}) {
+    init(state:ANEnum, _ action:@escaping ()->Void = {}) {
         self.state = state
         self.action = action
     }
@@ -22,11 +22,37 @@ struct MButton: View {
         Button(action: {
             self.action()
         }){
-            Text(self.state.text())
+            Text("")
                 .frame(width: state.size(), height: state.size())
-                .background(state.color())
-                .foregroundColor(.white)
-                .clipShape(Circle())
+                .background(
+                    Image(systemName: buttonImg())
+                        .resizable()
+                )
+        }
+    }
+    
+    func buttonImg() -> String {
+        switch self.state {
+            case .CLOSE:
+                return "stop.circle"
+            case .FULL_SCREEN:
+                return "arrow.up.left.and.arrow.down.right"
+            case .PGUP:
+                return "backward.end"
+            case .PGDN:
+                return "forward.end"
+            case .PLAY:
+                return "play.circle"
+            case .UP:
+                return "chevron.up.circle.fill"
+            case .DOWN:
+                return "chevron.down.circle.fill"
+            case .LEFT:
+                return "chevron.left.circle.fill"
+            case .RIGHT:
+                return "chevron.right.circle.fill"
+            default:
+                return "questionmark.circle"
         }
     }
 }
@@ -35,9 +61,9 @@ struct MButton_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             VStack {
-                MButton(state: .LEFT)
+                MButton(state: .UP)
                 HStack{
-                    MButton(state: .UP)
+                    MButton(state: .LEFT)
                     MButton(state: .PLAY).padding([.top, .bottom], 5.0)
                     MButton(state: .RIGHT)
                 }

@@ -7,7 +7,6 @@ target 'movie-remote-control' do
   pod 'SwiftHTTP', '~> 3.0.1'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
-  pod 'swiftScan', :git => 'https://github.com/MxABC/swiftScan.git'
   # Pods for movie-remote-control
 
   target 'movie-remote-controlTests' do
