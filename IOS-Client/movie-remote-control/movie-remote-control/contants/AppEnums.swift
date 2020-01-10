@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-enum ANEnum {
+enum ViewEnum {
     case ON, OFF;
     case PLAY, UP, DOWN, LEFT, RIGHT, CLOSE, PGDN, PGUP, FULL_SCREEN;
     static var w:CGFloat? = 50
@@ -40,6 +40,6 @@ enum ANEnum {
     }
     
     public func size() -> CGFloat? {
-        return ANEnum.w
+        return ViewEnum.w
     }
 }

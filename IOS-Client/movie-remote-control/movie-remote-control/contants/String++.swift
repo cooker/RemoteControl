@@ -8,12 +8,6 @@
 
 import Foundation
 
-struct Ports {
-    static var port:Int{
-        return 63788;
-    }
-}
-
 extension String {
     // base64编码
     func toBase64() -> String {

@@ -18,10 +18,10 @@
 		93CEBD6B239BCB8A006F62F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CEBD69239BCB8A006F62F5 /* LaunchScreen.storyboard */; };
 		93CEBD76239BCB8A006F62F5 /* movie_remote_controlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD75239BCB8A006F62F5 /* movie_remote_controlTests.swift */; };
 		93CEBD81239BCB8A006F62F5 /* movie_remote_controlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD80239BCB8A006F62F5 /* movie_remote_controlUITests.swift */; };
-		93CEBD90239BCBEF006F62F5 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD8F239BCBEF006F62F5 /* Light.swift */; };
-		93CEBD95239BD079006F62F5 /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD94239BD079006F62F5 /* MButton.swift */; };
-		93CEBD97239BD08B006F62F5 /* ANEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD96239BD08B006F62F5 /* ANEnum.swift */; };
-		93CEBD99239CBCED006F62F5 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD98239CBCED006F62F5 /* Env.swift */; };
+		93CEBD90239BCBEF006F62F5 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD8F239BCBEF006F62F5 /* LightView.swift */; };
+		93CEBD95239BD079006F62F5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD94239BD079006F62F5 /* ButtonView.swift */; };
+		93CEBD97239BD08B006F62F5 /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD96239BD08B006F62F5 /* AppEnums.swift */; };
+		93CEBD99239CBCED006F62F5 /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD98239CBCED006F62F5 /* String++.swift */; };
 		EB9C17A0D3632B6BEF7A3ACC /* Pods_movie_remote_control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC61DE2D5DCCCC08B3E24233 /* Pods_movie_remote_control.framework */; };
 		F1FAC8809043836074432D70 /* Pods_movie_remote_controlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F56C0B8B94FCF56085C6A1 /* Pods_movie_remote_controlTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,10 +65,10 @@
 		93CEBD7C239BCB8A006F62F5 /* movie-remote-controlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "movie-remote-controlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CEBD80239BCB8A006F62F5 /* movie_remote_controlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie_remote_controlUITests.swift; sourceTree = "<group>"; };
 		93CEBD82239BCB8A006F62F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93CEBD8F239BCBEF006F62F5 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
-		93CEBD94239BD079006F62F5 /* MButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MButton.swift; sourceTree = "<group>"; };
-		93CEBD96239BD08B006F62F5 /* ANEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANEnum.swift; sourceTree = "<group>"; };
-		93CEBD98239CBCED006F62F5 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		93CEBD8F239BCBEF006F62F5 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
+		93CEBD94239BD079006F62F5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		93CEBD96239BD08B006F62F5 /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
+		93CEBD98239CBCED006F62F5 /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
 		C3F56C0B8B94FCF56085C6A1 /* Pods_movie_remote_controlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_remote_controlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54679B3951F70E01258C3E0 /* Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-control-movie-remote-controlUITests/Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E0B9E0A2704086713FA261D8 /* Pods_movie_remote_control_movie_remote_controlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_remote_control_movie_remote_controlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,8 +202,8 @@
 		93CEBD8E239BCB9F006F62F5 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				93CEBD8F239BCBEF006F62F5 /* Light.swift */,
-				93CEBD94239BD079006F62F5 /* MButton.swift */,
+				93CEBD8F239BCBEF006F62F5 /* LightView.swift */,
+				93CEBD94239BD079006F62F5 /* ButtonView.swift */,
 				935A99CB23B70694006D0F27 /* OcrScanView.swift */,
 			);
 			path = views;
@@ -212,8 +212,8 @@
 		93CEBD91239BCC08006F62F5 /* contants */ = {
 			isa = PBXGroup;
 			children = (
-				93CEBD96239BD08B006F62F5 /* ANEnum.swift */,
-				93CEBD98239CBCED006F62F5 /* Env.swift */,
+				93CEBD96239BD08B006F62F5 /* AppEnums.swift */,
+				93CEBD98239CBCED006F62F5 /* String++.swift */,
 			);
 			path = contants;
 			sourceTree = "<group>";
@@ -463,11 +463,11 @@
 				935A99CC23B70694006D0F27 /* OcrScanView.swift in Sources */,
 				93B039EC23A0EDC9004B62BC /* Client.swift in Sources */,
 				93CEBD61239BCB89006F62F5 /* SceneDelegate.swift in Sources */,
-				93CEBD90239BCBEF006F62F5 /* Light.swift in Sources */,
+				93CEBD90239BCBEF006F62F5 /* LightView.swift in Sources */,
 				93CEBD63239BCB89006F62F5 /* ContentView.swift in Sources */,
-				93CEBD99239CBCED006F62F5 /* Env.swift in Sources */,
-				93CEBD97239BD08B006F62F5 /* ANEnum.swift in Sources */,
-				93CEBD95239BD079006F62F5 /* MButton.swift in Sources */,
+				93CEBD99239CBCED006F62F5 /* String++.swift in Sources */,
+				93CEBD97239BD08B006F62F5 /* AppEnums.swift in Sources */,
+				93CEBD95239BD079006F62F5 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

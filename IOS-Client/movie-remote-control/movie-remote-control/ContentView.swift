@@ -12,80 +12,55 @@ import RxSwift
 struct ContentView: View {
     
     @State var ip:String = ""
-    @State var state: ANEnum = ANEnum.OFF
+    @State var state: ViewEnum = ViewEnum.OFF
     @State var isScan:Bool = false
     
     var body: some View {
+        
         NavigationView() {
             VStack() {
-                HStack{
+                HStack(){
                     Spacer()
                     NavigationLink(destination: OcrScanView(ip: $ip, isScan: $isScan), isActive: self.$isScan) {
-                        
                         Image(systemName: "qrcode.viewfinder")
                             .resizable()
-                            .frame(width: 36, height: 36, alignment: .center)
-                    }
+                            .frame(width: 36, height: 36, alignment: .center) }.navigationBarTitle(Text("遥控器"), displayMode: .inline)
                     Spacer()
                     TextField("255.255.255.255", text: $ip)
                         .frame(width: 200.0, height: 52.0)
                         .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                     Spacer()
-                    Light(state: $state).offset().padding(.all, 20.0)
+                    LightView(state: $state).offset().padding(.all, 20.0)
                 }
                 
                 Spacer()
                 
                 VStack {
-                    MButton(state: .UP) {
-                        self.callPc(.UP)
-                    }
+                    ButtonView(ip: self.$ip, btnType: .UP, lightStatus: self.$state)
                     HStack{
-                        MButton(state: .LEFT){
-                            self.callPc(.LEFT)
-                            
-                        }
-                        MButton(state: .PLAY){
-                           self.callPc(.PLAY)
-                            
-                        }.padding([.top, .bottom], 5.0)
-                        MButton(state: .RIGHT){
-                           self.callPc(.RIGHT)
-                        }
+                        ButtonView(ip: self.$ip, btnType: .LEFT, lightStatus: self.$state)
+                        ButtonView(ip: self.$ip, btnType: .PLAY, lightStatus: self.$state).padding([.top, .bottom], 5.0)
+                        ButtonView(ip: self.$ip, btnType: .RIGHT, lightStatus: self.$state)
                     }
-                    MButton(state: .DOWN){
-                        self.callPc(.DOWN)
-                    }
+                    ButtonView(ip: self.$ip, btnType: .DOWN, lightStatus: self.$state)
                 }
                 Spacer()
-                HStack {
-                    MButton(state: .CLOSE){
-                        self.callPc(.CLOSE)
-                    }
-                    MButton(state: .FULL_SCREEN){
-                        self.callPc(.FULL_SCREEN)
-                    }
-                    MButton(state: .PGUP){
-                        self.callPc(.PGUP)
-                    }
-                    MButton(state: .PGDN){
-                        self.callPc(.PGDN)
-                    }
+                HStack() {
+                    Spacer()
+                    ButtonView(ip: self.$ip, btnType: .CLOSE, lightStatus: self.$state)
+                    Spacer()
+                    ButtonView(ip: self.$ip, btnType: .FULL_SCREEN, lightStatus: self.$state)
+                    Spacer()
+                    ButtonView(ip: self.$ip, btnType: .PGUP, lightStatus: self.$state)
+                    Spacer()
+                    ButtonView(ip: self.$ip, btnType: .PGDN, lightStatus: self.$state)
+                    Spacer()
                 }
                 Spacer()
             }
-        }.background(Color.clear)
-        
-    }
-    
-    public func callPc(_ m:ANEnum) {
-        self.state = .ON
-        callHttp(m, self.ip)
-        //延迟1秒执行
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            self.state = .OFF
         }
     }
+    
 }
 
 #if DEBUG

@@ -9,30 +9,31 @@
 import Foundation
 import SwiftUI
 
-struct MButton: View {
-    let state:ANEnum;
-    let action: ()->Void
+struct ButtonView: View {
+    var btnType:ViewEnum
+    @Binding var lightStatus:ViewEnum
+    @Binding var ip:String
     
-    init(state:ANEnum, _ action:@escaping ()->Void = {}) {
-        self.state = state
-        self.action = action
+    init(ip:Binding<String>, btnType:ViewEnum, lightStatus:Binding<ViewEnum>) {
+        self._ip = ip
+        self.btnType = btnType
+        self._lightStatus = lightStatus
     }
     
     var body: some View {
         Button(action: {
-            self.action()
+            callHttp(self.btnType, self.ip)
         }){
             Text("")
-                .frame(width: state.size(), height: state.size())
+                .frame(width: btnType.size(), height: btnType.size())
                 .background(
-                    Image(systemName: buttonImg())
-                        .resizable()
+                    Image(systemName: buttonImg()).resizable()
                 )
-        }
+        }.buttonStyle(ButtonViewStyle(btnSelf: self))
     }
     
     func buttonImg() -> String {
-        switch self.state {
+        switch self.btnType {
             case .CLOSE:
                 return "stop.circle"
             case .FULL_SCREEN:
@@ -57,19 +58,17 @@ struct MButton: View {
     }
 }
 
-struct MButton_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack {
-            VStack {
-                MButton(state: .UP)
-                HStack{
-                    MButton(state: .LEFT)
-                    MButton(state: .PLAY).padding([.top, .bottom], 5.0)
-                    MButton(state: .RIGHT)
-                }
-                MButton(state: .DOWN)
-            }
+struct ButtonViewStyle : ButtonStyle {
+    var btnSelf:ButtonView
+    
+    func makeBody(configuration: Self.Configuration) -> some View {
+        if configuration.isPressed {
+            btnSelf.lightStatus = .ON
+        }else {
+            btnSelf.lightStatus = .OFF
         }
-        
+        return configuration.label
+            .foregroundColor(configuration.isPressed ? .red : .blue)
+            .background(Color.clear)
     }
 }

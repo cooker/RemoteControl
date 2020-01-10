@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-struct Light: View {
-    var state:Binding<ANEnum>;
+struct LightView: View {
+    var state:Binding<ViewEnum>;
     
     var body: some View {
         let img = buildImage()
@@ -33,11 +33,11 @@ struct Light: View {
 
 #if DEBUG
 struct Light_Previews: PreviewProvider {
-    @State static var sk = ANEnum.ON
+    @State static var sk = ViewEnum.ON
     
     static var previews: some View {
     
-        Light(state: $sk)
+        LightView(state: $sk)
     }
 }
 #endif

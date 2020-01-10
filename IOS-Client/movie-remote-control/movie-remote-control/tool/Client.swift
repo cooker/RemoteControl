@@ -9,7 +9,7 @@
 import Foundation
 import SwiftHTTP
 
-func callHttp(_ action: ANEnum, _ ip:String = "127.0.0.1"){
+func callHttp(_ action: ViewEnum, _ ip:String = "127.0.0.1"){
     HTTP.GET("http://" + ip + ":8099?action=" + action.toString()) { response in
         if let err = response.error {
             print("error: \(err.localizedDescription)")
