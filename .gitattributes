@@ -1,5 +1,5 @@
 *.swift linguist-language=Swift
-*.java linguist-language=Java
-*.xaml linguist-language=C#
-*.cs linguist-language=C#
+*.java linguist-language=Swift
+*.xaml linguist-language=Swift
+*.cs linguist-language=Swift
 *.xcworkspace linguist-language=Swift
