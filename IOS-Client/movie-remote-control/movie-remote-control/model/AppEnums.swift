@@ -11,7 +11,7 @@ import SwiftUI
 
 enum ViewEnum {
     case ON, OFF;
-    case PLAY, UP, DOWN, LEFT, RIGHT, CLOSE, PGDN, PGUP, FULL_SCREEN;
+    case PLAY, UP, DOWN, LEFT, RIGHT, CLOSE, PGDN, PGUP, FULL_SCREEN, FULL2_SCREEN;
     static var w:CGFloat? = 50
     
     public func toString() -> String {
@@ -34,6 +34,8 @@ enum ViewEnum {
                 return "{PGUP}".toBase64();
             case .FULL_SCREEN:
                 return "^%{ENTER}".toBase64();
+            case .FULL2_SCREEN:
+            return "%{ENTER}".toBase64();
             default:
                 return "";
         }

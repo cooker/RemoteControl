@@ -36,7 +36,6 @@ struct Light_Previews: PreviewProvider {
     @State static var sk = ViewEnum.ON
     
     static var previews: some View {
-    
         LightView(state: $sk)
     }
 }

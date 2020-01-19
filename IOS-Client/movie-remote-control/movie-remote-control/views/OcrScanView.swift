@@ -19,6 +19,7 @@ class OcrScanUIController : UIViewController {
     var qrCodeFrameView: UIView?
     //相机预览
     var previewLayer:AVCaptureVideoPreviewLayer?
+    var tempSession:AVCaptureSession?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,7 @@ class OcrScanUIController : UIViewController {
         do {
             let input = try AVCaptureDeviceInput(device: avDevice!)
             let session = AVCaptureSession()
+            tempSession = session
             session.addInput(input)
             let captureMetadataOutput = AVCaptureMetadataOutput()
             session.addOutput(captureMetadataOutput)
@@ -69,7 +71,6 @@ class OcrScanUIController : UIViewController {
             return
         }
     }
-    
     
 }
 

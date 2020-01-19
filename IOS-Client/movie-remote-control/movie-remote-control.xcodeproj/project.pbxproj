@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5115B0B241306C9E473F0C60 /* Pods_movie_remote_control_movie_remote_controlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B9E0A2704086713FA261D8 /* Pods_movie_remote_control_movie_remote_controlUITests.framework */; };
 		935A99CC23B70694006D0F27 /* OcrScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A99CB23B70694006D0F27 /* OcrScanView.swift */; };
+		939CA00523D18B4900989A23 /* ControlData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CA00423D18B4900989A23 /* ControlData.swift */; };
 		93B039EC23A0EDC9004B62BC /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B039EB23A0EDC9004B62BC /* Client.swift */; };
 		93CEBD5F239BCB89006F62F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD5E239BCB89006F62F5 /* AppDelegate.swift */; };
 		93CEBD61239BCB89006F62F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD60239BCB89006F62F5 /* SceneDelegate.swift */; };
@@ -50,6 +51,7 @@
 		5C4A502BA63DDE83ADE4C311 /* Pods-movie-remote-controlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-controlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-controlTests/Pods-movie-remote-controlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AABA8C04F076AA5E51A60EC /* Pods-movie-remote-control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-control/Pods-movie-remote-control.debug.xcconfig"; sourceTree = "<group>"; };
 		935A99CB23B70694006D0F27 /* OcrScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrScanView.swift; sourceTree = "<group>"; };
+		939CA00423D18B4900989A23 /* ControlData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlData.swift; sourceTree = "<group>"; };
 		93B039EB23A0EDC9004B62BC /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		93CEBD5B239BCB89006F62F5 /* movie-remote-control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movie-remote-control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CEBD5E239BCB89006F62F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,12 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				93B039EA23A0EDA6004B62BC /* tool */,
-				93CEBD91239BCC08006F62F5 /* contants */,
+				93CEBD91239BCC08006F62F5 /* model */,
 				93CEBD8E239BCB9F006F62F5 /* views */,
+				93CEBD64239BCB8A006F62F5 /* Assets.xcassets */,
 				93CEBD5E239BCB89006F62F5 /* AppDelegate.swift */,
 				93CEBD60239BCB89006F62F5 /* SceneDelegate.swift */,
 				93CEBD62239BCB89006F62F5 /* ContentView.swift */,
-				93CEBD64239BCB8A006F62F5 /* Assets.xcassets */,
 				93CEBD69239BCB8A006F62F5 /* LaunchScreen.storyboard */,
 				93CEBD6C239BCB8A006F62F5 /* Info.plist */,
 				93CEBD66239BCB8A006F62F5 /* Preview Content */,
@@ -209,13 +211,14 @@
 			path = views;
 			sourceTree = "<group>";
 		};
-		93CEBD91239BCC08006F62F5 /* contants */ = {
+		93CEBD91239BCC08006F62F5 /* model */ = {
 			isa = PBXGroup;
 			children = (
 				93CEBD96239BD08B006F62F5 /* AppEnums.swift */,
 				93CEBD98239CBCED006F62F5 /* String++.swift */,
+				939CA00423D18B4900989A23 /* ControlData.swift */,
 			);
-			path = contants;
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,6 +471,7 @@
 				93CEBD99239CBCED006F62F5 /* String++.swift in Sources */,
 				93CEBD97239BD08B006F62F5 /* AppEnums.swift in Sources */,
 				93CEBD95239BD079006F62F5 /* ButtonView.swift in Sources */,
+				939CA00523D18B4900989A23 /* ControlData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

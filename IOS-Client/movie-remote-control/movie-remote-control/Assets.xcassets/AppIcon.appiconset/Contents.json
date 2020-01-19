@@ -26,20 +26,21 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "原图-4.jpg",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "icon-120.png",
+      "filename" : "原图-3.jpg",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "icon-180.png",
+      "filename" : "原图-2.jpg",
       "scale" : "3x"
     },
     {
@@ -58,8 +59,9 @@
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "原图-1.jpg",
       "scale" : "2x"
     },
     {
@@ -73,8 +75,9 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "原图.jpg",
       "scale" : "1x"
     },
     {
@@ -88,9 +91,8 @@
       "scale" : "2x"
     },
     {
-      "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "icon-1024.png",
+      "size" : "1024x1024",
       "scale" : "1x"
     }
   ],

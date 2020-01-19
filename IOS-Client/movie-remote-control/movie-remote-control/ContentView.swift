@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import RxSwift
 
 struct ContentView: View {
     
@@ -16,48 +15,70 @@ struct ContentView: View {
     @State var isScan:Bool = false
     
     var body: some View {
-        
         NavigationView() {
             VStack() {
-                HStack(){
-                    Spacer()
-                    NavigationLink(destination: OcrScanView(ip: $ip, isScan: $isScan), isActive: self.$isScan) {
-                        Image(systemName: "qrcode.viewfinder")
-                            .resizable()
-                            .frame(width: 36, height: 36, alignment: .center) }.navigationBarTitle(Text("遥控器"), displayMode: .inline)
-                    Spacer()
-                    TextField("255.255.255.255", text: $ip)
-                        .frame(width: 200.0, height: 52.0)
-                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    Spacer()
-                    LightView(state: $state).offset().padding(.all, 20.0)
-                }
-                
+                makeHeadUI()
                 Spacer()
-                
-                VStack {
-                    ButtonView(ip: self.$ip, btnType: .UP, lightStatus: self.$state)
-                    HStack{
-                        ButtonView(ip: self.$ip, btnType: .LEFT, lightStatus: self.$state)
-                        ButtonView(ip: self.$ip, btnType: .PLAY, lightStatus: self.$state).padding([.top, .bottom], 5.0)
-                        ButtonView(ip: self.$ip, btnType: .RIGHT, lightStatus: self.$state)
-                    }
-                    ButtonView(ip: self.$ip, btnType: .DOWN, lightStatus: self.$state)
-                }
+                makeAimUI()
                 Spacer()
-                HStack() {
-                    Spacer()
-                    ButtonView(ip: self.$ip, btnType: .CLOSE, lightStatus: self.$state)
-                    Spacer()
-                    ButtonView(ip: self.$ip, btnType: .FULL_SCREEN, lightStatus: self.$state)
-                    Spacer()
-                    ButtonView(ip: self.$ip, btnType: .PGUP, lightStatus: self.$state)
-                    Spacer()
-                    ButtonView(ip: self.$ip, btnType: .PGDN, lightStatus: self.$state)
-                    Spacer()
-                }
+                makeFootUI()
                 Spacer()
+                makeFootUI2()
+                Spacer()
+            }.background(Image("Image").resizable().blur(radius: 3.0))
+        }
+        
+    }
+    
+    
+    func makeHeadUI() -> some View {
+        return HStack(){
+            Spacer()
+            NavigationLink(destination: OcrScanView(ip: $ip, isScan: $isScan), isActive: self.$isScan) {
+                Image(systemName: "qrcode.viewfinder")
+                    .resizable()
+                .frame(width: 36, height: 36, alignment: .center) }.navigationBarTitle(Text("遥控器"), displayMode: .inline)
+            Spacer()
+            
+            TextField("255.255.255.255", text: $ip)
+                .frame(width: 200.0, height: 52.0)
+                .border(Color.blue, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+            Spacer()
+            LightView(state: $state).offset().padding(.all, 20.0)
+        }
+    }
+    
+    func makeAimUI() -> some View {
+        return VStack {
+            ButtonView(ip: self.$ip, btnType: .UP, lightStatus: self.$state)
+            HStack{
+                ButtonView(ip: self.$ip, btnType: .LEFT, lightStatus: self.$state)
+                ButtonView(ip: self.$ip, btnType: .PLAY, lightStatus: self.$state).padding([.top, .bottom], 5.0)
+                ButtonView(ip: self.$ip, btnType: .RIGHT, lightStatus: self.$state)
             }
+            ButtonView(ip: self.$ip, btnType: .DOWN, lightStatus: self.$state)
+        }
+    }
+    
+    func makeFootUI() -> some View {
+        return HStack() {
+            Spacer()
+            ButtonView(ip: self.$ip, btnType: .CLOSE, lightStatus: self.$state)
+            Spacer()
+            ButtonView(ip: self.$ip, btnType: .FULL_SCREEN, lightStatus: self.$state)
+            Spacer()
+            ButtonView(ip: self.$ip, btnType: .PGUP, lightStatus: self.$state)
+            Spacer()
+            ButtonView(ip: self.$ip, btnType: .PGDN, lightStatus: self.$state)
+            Spacer()
+        }
+    }
+    
+    func makeFootUI2() -> some View {
+        return HStack() {
+            Spacer()
+            ButtonView(ip: self.$ip, btnType: .FULL2_SCREEN, lightStatus: self.$state)
+            Spacer()
         }
     }
     
@@ -71,3 +92,9 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 #endif
+
+struct ExtractedView: View {
+    var body: some View {
+        Spacer()
+    }
+}

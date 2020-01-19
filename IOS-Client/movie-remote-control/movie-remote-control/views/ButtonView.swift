@@ -38,6 +38,8 @@ struct ButtonView: View {
                 return "stop.circle"
             case .FULL_SCREEN:
                 return "arrow.up.left.and.arrow.down.right"
+            case .FULL2_SCREEN:
+                return "tv.circle.fill"
             case .PGUP:
                 return "backward.end"
             case .PGDN:
