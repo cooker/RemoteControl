@@ -23,6 +23,7 @@
 		93CEBD95239BD079006F62F5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD94239BD079006F62F5 /* ButtonView.swift */; };
 		93CEBD97239BD08B006F62F5 /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD96239BD08B006F62F5 /* AppEnums.swift */; };
 		93CEBD99239CBCED006F62F5 /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEBD98239CBCED006F62F5 /* String++.swift */; };
+		93D0D45723D543CE00983956 /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D0D45923D543CE00983956 /* infoPlist.strings */; };
 		EB9C17A0D3632B6BEF7A3ACC /* Pods_movie_remote_control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC61DE2D5DCCCC08B3E24233 /* Pods_movie_remote_control.framework */; };
 		F1FAC8809043836074432D70 /* Pods_movie_remote_controlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F56C0B8B94FCF56085C6A1 /* Pods_movie_remote_controlTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,9 @@
 		93CEBD94239BD079006F62F5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		93CEBD96239BD08B006F62F5 /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
 		93CEBD98239CBCED006F62F5 /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
+		93D0D45423D5435C00983956 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		93D0D45823D543CE00983956 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/infoPlist.strings; sourceTree = "<group>"; };
+		93D0D45A23D543E300983956 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/infoPlist.strings"; sourceTree = "<group>"; };
 		C3F56C0B8B94FCF56085C6A1 /* Pods_movie_remote_controlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_remote_controlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54679B3951F70E01258C3E0 /* Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie-remote-control-movie-remote-controlUITests/Pods-movie-remote-control-movie-remote-controlUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E0B9E0A2704086713FA261D8 /* Pods_movie_remote_control_movie_remote_controlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_remote_control_movie_remote_controlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +175,7 @@
 				93CEBD69239BCB8A006F62F5 /* LaunchScreen.storyboard */,
 				93CEBD6C239BCB8A006F62F5 /* Info.plist */,
 				93CEBD66239BCB8A006F62F5 /* Preview Content */,
+				93D0D45923D543CE00983956 /* infoPlist.strings */,
 			);
 			path = "movie-remote-control";
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 93CEBD52239BCB89006F62F5;
 			productRefGroup = 93CEBD5C239BCB89006F62F5 /* Products */;
@@ -331,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93CEBD6B239BCB8A006F62F5 /* LaunchScreen.storyboard in Resources */,
+				93D0D45723D543CE00983956 /* infoPlist.strings in Resources */,
 				93CEBD68239BCB8A006F62F5 /* Preview Assets.xcassets in Resources */,
 				93CEBD65239BCB8A006F62F5 /* Assets.xcassets in Resources */,
 			);
@@ -511,8 +518,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				93CEBD6A239BCB8A006F62F5 /* Base */,
+				93D0D45423D5435C00983956 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		93D0D45923D543CE00983956 /* infoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D0D45823D543CE00983956 /* en */,
+				93D0D45A23D543E300983956 /* zh-Hans */,
+			);
+			name = infoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -522,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -583,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
